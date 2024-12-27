@@ -1,0 +1,384 @@
+.font-italiana {
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-title h1 {
+    font-family: Italiana;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 141.36px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.merriweather-black {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.merriweather-light-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.merriweather-regular-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.merriweather-bold-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.merriweather-black-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.stick {
+    background: linear-gradient(to bottom, #454545, #131314);
+    width: 1px;
+    height: 28vh;
+    top: 905px;
+    left: 960px;
+    gap: 0px;
+    opacity: 1;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    overflow-x: hidden;
+    background-color: #131314;
+    height: 200rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding-block: 3rem;
+    padding-inline: 6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Italiana', serif;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 70px;
+}
+
+.nav-links a {
+    color: white;
+    font-family: 'Italiana', serif;
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links i {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: visible;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('./assets/img/uluwatu-bg.jpg');
+    background-size: cover;
+    filter: brightness(0.45);
+    margin-top: -10rem;
+}
+
+.hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #131314, transparent);
+}
+
+.hero-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-title {
+    text-align: center;
+    color: white;
+}
+
+.hero-title h1 {
+    max-width: 42rem;
+}
+
+.scroll-indicator {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60rem;
+    gap: 2rem;
+}
+
+.scroll-text {
+    color: white;
+    font-weight: 700;
+    padding: 0 1rem;
+    border-radius: 0.25rem;
+    font-family: 'Merriweather', serif;
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+
+/* History Section Styles */
+.history-section {
+    background-color: #131314;
+    color: white;
+    padding-top: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-title h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Italiana', serif;
+    max-width: 36rem;
+}
+
+.history-timeline {
+    position: relative;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Vertical line */
+  .history-timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: linear-gradient(to bottom, #131314, #454545);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+  }
+
+  /* Content boxes */
+/* Update timeline content width */
+.timeline-content {
+    width: 35%; /* Reduced from 45% */
+    max-width: 850px; /* Add max-width for better control */
+    padding: 20px;
+    color: white;
+  }
+
+  /* Year dots */
+  .timeline-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #FFD700;
+    border-radius: 50%;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  /* Left side items */
+  .timeline-item:nth-child(odd) {
+    justify-content: flex-end;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content {
+    text-align: left;
+  }
+
+  /* Right side items */
+  .timeline-item:nth-child(even) {
+    justify-content: flex-start;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    text-align: right;
+  }
+
+  .timeline-year {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .timeline-text {
+    line-height: 1.6;
+    font-size: 14px;
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .history-timeline::after {
+      left: 31px; /* Align line to the left on mobile */
+    }
+
+    .timeline-item {
+      justify-content: flex-start;
+    }
+
+    .timeline-content {
+      width: calc(100% - 60px);
+      text-align: left;
+      padding: 20px;
+    }
+
+    .timeline-dot {
+      left: 31px;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: left;
+    }
+  }
+
+
+/* Read More Button Styling */
+.readmore {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  .readmore a {
+    font-family: 'Merriweather', serif;
+    color: #FFD700;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 1px solid #FFD700;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .readmore a:hover {
+    background-color: #FFD700;
+    color: #131314;
+  }
+  
+
+.history-overlay-1,
+.history-overlay-2 {
+    position: absolute;
+}
+
+.history-overlay-1 {
+    margin-right: 54rem;
+    margin-top: 3.5rem;
+    width: 26rem;
+}
+
+.history-overlay-1 img {
+    width: 100%;
+    height: auto;
+}
