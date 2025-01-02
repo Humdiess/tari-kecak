@@ -1,20 +1,8 @@
+/* Font Styles */
 .font-italiana {
     font-family: "Italiana", serif;
     font-weight: 400;
     font-style: normal;
-}
-
-.hero-title h1 {
-    font-family: Italiana;
-    font-size: 120px;
-    font-weight: 400;
-    line-height: 141.36px;
-    letter-spacing: 0.1em;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    max-width: 42rem;
-    margin: 0;
 }
 
 .merriweather-light {
@@ -63,20 +51,6 @@
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
-}
-
-.stick-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: -2rem; /* Adjust to connect hero and history sections */
-    height: 28vh;
-}
-
-.stick {
-    background: linear-gradient(to bottom, #454545, #131314);
-    width: 1px;
-    gap: 0px;
-    opacity: 1;
 }
 
 /* General Styles */
@@ -225,6 +199,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow: visible;
+    padding-bottom: 4rem; /* Add bottom padding for consistent spacing */
 }
 
 .history-content {
@@ -248,6 +223,7 @@ body {
     text-align: center;
     font-family: 'Italiana', serif;
     max-width: 36rem;
+    margin-bottom: 4rem; /* Consistent spacing */
 }
 
 .history-timeline {
@@ -255,10 +231,9 @@ body {
     padding: 40px 0;
     max-width: 1200px;
     margin: 0 auto;
-  }
+}
 
-  /* Vertical line */
-  .history-timeline::after {
+.history-timeline::after {
     content: '';
     position: absolute;
     width: 2px;
@@ -267,25 +242,22 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-  }
+}
 
-  .timeline-item {
+.timeline-item {
     position: relative;
     width: 100%;
     display: flex;
-  }
+}
 
-  /* Content boxes */
-/* Update timeline content width */
 .timeline-content {
     width: 35%; /* Reduced from 45% */
     max-width: 850px; /* Add max-width for better control */
     padding: 20px;
     color: white;
-  }
+}
 
-  /* Year dots */
-  .timeline-dot {
+.timeline-dot {
     position: absolute;
     width: 12px;
     height: 12px;
@@ -295,106 +267,103 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-  }
+}
 
-  /* Left side items */
-  .timeline-item:nth-child(odd) {
+.timeline-item:nth-child(odd) {
     justify-content: flex-end;
-  }
+}
 
-  .timeline-item:nth-child(odd) .timeline-content {
+.timeline-item:nth-child(odd) .timeline-content {
     text-align: left;
-  }
+}
 
-  /* Right side items */
-  .timeline-item:nth-child(even) {
+.timeline-item:nth-child(even) {
     justify-content: flex-start;
-  }
+}
 
-  .timeline-item:nth-child(even) .timeline-content {
+.timeline-item:nth-child(even) .timeline-content {
     text-align: right;
-  }
+}
 
-  .timeline-year {
+.timeline-year {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
+}
 
-  .timeline-text {
+.timeline-text {
     line-height: 1.6;
     font-size: 14px;
-  }
+}
 
-  /* Responsive Design */
-  @media screen and (max-width: 768px) {
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     .history-timeline::after {
-      left: 31px; /* Align line to the left on mobile */
+        left: 31px; /* Align line to the left on mobile */
     }
 
     .timeline-item {
-      justify-content: flex-start;
+        justify-content: flex-start;
     }
 
     .timeline-content {
-      width: calc(100% - 60px);
-      text-align: left;
-      padding: 20px;
+        width: calc(100% - 60px);
+        text-align: left;
+        padding: 20px;
     }
 
     .timeline-dot {
-      left: 31px;
-      transform: translateX(-50%);
+        left: 31px;
+        transform: translateX(-50%);
     }
 
     .timeline-item:nth-child(odd) .timeline-content,
     .timeline-item:nth-child(even) .timeline-content {
-      padding-left: 20px;
-      padding-right: 20px;
-      text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;
     }
-  }
-
+}
 
 /* Read More Button Styling for History Section */
 .readmore {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .readmore a {
-  font-family: 'Merriweather', serif;
-  color: #FFD700;
-  text-decoration: none;
-  padding: 1rem 5rem;
-  border: 1px solid #FFD700;
-  font-size: 14px;
-  transition: all 0.3s ease;
+    font-family: 'Merriweather', serif;
+    color: #FFD700;
+    text-decoration: none;
+    padding: 1rem 5rem;
+    border: 1px solid #FFD700;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .readmore a:hover {
-  background-color: #FFD700;
-  color: #131314;
+    background-color: #FFD700;
+    color: #131314;
 }
 
 /* Read More Button Styling for About Section */
 .readmore-about {
-  margin-top: 6rem;
+    margin-top: 6rem;
 }
 
 .readmore-about a {
-  font-family: 'Merriweather', serif;
-  color: #FFD700;
-  text-decoration: none;
-  padding: 1rem 4rem;
-  border: 1px solid #FFD700;
-  font-size: 14px;
-  transition: all 0.3s ease;
+    font-family: 'Merriweather', serif;
+    color: #FFD700;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border: 1px solid #FFD700;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .readmore-about a:hover {
-  background-color: #FFD700;
-  color: #131314;
+    background-color: #FFD700;
+    color: #131314;
 }
 
 .history-overlay-1,
@@ -419,6 +388,7 @@ body {
     height: auto;
 }
 
+/* About Section Styles */
 .about-title h1 {
     font-family: Italiana;
     font-size: 64px;
@@ -428,257 +398,268 @@ body {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: white;
+    margin-bottom: 4rem; /* Consistent spacing */
 }
 
 .about {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 4rem; /* Add top margin for consistent spacing */
+}
+
+.about-grid {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
   padding: 4rem 0;
+  max-width: 1920px;
 }
 
 .about-description,
 .about-image {
-  flex: 1;
-  max-width: 50%;
-  box-sizing: border-box; /* Ensure padding does not affect width */
+    flex: 1;
+    max-width: 50%;
+    box-sizing: border-box; /* Ensure padding does not affect width */
 }
 
 .about-description {
-  padding: 4rem 8rem 6rem 6rem;
-  color: white;
-  font-family: 'Merriweather', serif;
-  font-size: 1.125rem;
-  line-height: 1.6;
+    padding: 4rem 8rem 6rem 6rem;
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
 }
 
 .about-image {
-  text-align: right;
-  position: relative;
+    text-align: right;
+    position: relative;
 }
 
 .about-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
 }
 
 .about-image-overlay {
-  position: absolute;
-  margin-top: -26rem;
-  margin-left: -26rem;
+    position: absolute;
+    margin-top: -26rem;
+    margin-left: -26rem;
 }
 
+/* Ticketing Section Styles */
 .ticketing-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .ticketing-title h1 {
-  font-size: 64px;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-family: 'Italiana', serif;
-  max-width: 36rem;
-  color: white;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Italiana', serif;
+    max-width: 36rem;
+    color: white;
+    margin-bottom: 4rem; /* Consistent spacing */
 }
 
 .ticketing {
-  /* padding: 4rem 2rem; */
-  min-height: 100vh;
+    min-height: 100vh;
+    margin-top: 4rem; /* Add top margin for consistent spacing */
 }
 
 .ticketing-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .ticketing-title h1 {
-  font-size: 64px;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-family: 'Italiana', serif;
-  max-width: 36rem;
-  color: white;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Italiana', serif;
+    max-width: 36rem;
+    color: white;
+    margin-bottom: 4rem; /* Consistent spacing */
 }
 
 .ticketing-content {
-  /* max-width: 1200px; */
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .ticketing-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
+  max-width: 1920px; /* Set a max-width for the grid */
+  margin: 0 auto; /* Center the grid */
 }
 
 .ticketing-image {
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  height: 100%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
 }
 
 .ticketing-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .image-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 2rem;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
-  color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    color: white;
 }
 
 .image-caption h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  font-family: 'Italiana', serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Italiana', serif;
 }
 
 .image-caption p {
-  margin: 0;
+    margin: 0;
 }
 
 .image-caption .price {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
 }
-/* 
-.ticketing-details {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 0rem 3rem 3rem 3rem;
-} */
 
 .date-selector {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
 }
 
 .date-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  color: white;
-  gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    gap: 0.5rem;
 }
 
 .date-item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .date-item.active {
-  color: white;
-  border-bottom: 2px solid #FFD700;
+    color: white;
+    border-bottom: 2px solid #FFD700;
 }
 
 .date-item .day, .date-item .month {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: inherit;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: inherit;
 }
 
 .show-times {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .show-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: white;
 }
 
 .show-info h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .show-info .time {
-  color: #cccccc;
+    color: #cccccc;
 }
 
 .show-price {
-  text-align: right;
+    text-align: right;
 }
 
 .show-price p {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
 .book-btn {
-  background-color: #ffffff;
-  color: #1a1a1a;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .book-btn:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-2px);
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
 }
 
+/* Gallery Section Styles */
 .gallery-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 4rem;
-  padding: 0 2rem;
+    display: flex;
+    justify-content: space-between; /* Center the header */
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+    max-width: 1920px; /* Set a max-width */
+    margin: 0 auto; /* Center the header */
+    margin-top: 4rem; /* Add top margin for consistent spacing */
 }
 
 .gallery-header h2 {
-  font-family: 'Italiana', serif;
-  font-size: 64px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: white;
+    font-family: 'Italiana', serif;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    margin-bottom: 4rem; /* Consistent spacing */
 }
 
 .gallery-header a {
-  font-family: 'Merriweather', serif;
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  transition: all 0.3s ease;
+    font-family: 'Merriweather', serif;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
 .gallery-grid {
-  width: calc(100% - 4rem); /* Full width with padding */
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px; /* Set a max-width for the grid */
+  margin: 0 auto; /* Center the grid */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 300px; /* Adjusted height for normal aspect ratio */
@@ -687,67 +668,82 @@ body {
 }
 
 .gallery-item {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
 }
 
 .gallery-item:hover img {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* Specific grid positions */
 .gallery-item:nth-child(1) {
-  grid-column: 1;
-  grid-row: 1;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .gallery-item:nth-child(2) {
-  grid-column: 1;
-  grid-row: 2;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .gallery-item:nth-child(3) {
-  grid-column: 2;
-  grid-row: 1 / 3;
+    grid-column: 2;
+    grid-row: 1 / 3;
 }
 
 .gallery-item:nth-child(4) {
-  grid-column: 3;
-  grid-row: 1;
+    grid-column: 3;
+    grid-row: 1;
 }
 
 .gallery-item:nth-child(5) {
-  grid-column: 4;
-  grid-row: 1;
+    grid-column: 4;
+    grid-row: 1;
 }
 
 .gallery-item:nth-child(6) {
-  grid-column: 3 / 5;
-  grid-row: 2;
+    grid-column: 3 / 5;
+    grid-row: 2;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .gallery {
-      grid-template-columns: 1fr;
-      grid-auto-rows: 200px;
-  }
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+    }
 
-  .gallery-item:nth-child(1),
-  .gallery-item:nth-child(2),
-  .gallery-item:nth-child(3),
-  .gallery-item:nth-child(4),
-  .gallery-item:nth-child(5),
-  .gallery-item:nth-child(6) {
-      grid-column: 1;
-      grid-row: auto;
-  }
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(3),
+    .gallery-item:nth-child(4),
+    .gallery-item:nth-child(5),
+    .gallery-item:nth-child(6) {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+
+/* Stick Wrapper Styles */
+.stick-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem; /* Adjust to connect hero and history sections */
+    height: 28vh;
+}
+
+.stick {
+    background: linear-gradient(to bottom, #454545, #131314);
+    width: 0.1rem;
+    gap: 0px;
+    opacity: 1;
 }
