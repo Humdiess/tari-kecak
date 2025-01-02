@@ -245,6 +245,18 @@ body {
 }
 
 /* History Section Styles */
+
+.history-overlay-1 {
+    position: absolute;
+    margin-left: 32rem;
+}
+
+.history-overlay-2 {
+    position: absolute;
+    margin-left: 84rem;
+    margin-top: 40rem;
+}
+
 .history-section {
   background-color: #131314;
   color: white;
