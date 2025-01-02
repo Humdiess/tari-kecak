@@ -72,7 +72,7 @@ body {
 /* Navbar Styles */
 
 .navbar {
-  padding: 1rem 2rem;
+  padding: 2rem 4rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -270,7 +270,7 @@ body {
 }
 
 .history-title h1 {
-  font-size: 3rem;
+  font-size: 64px;
   font-weight: 700;
   text-align: center;
   font-family: 'Italiana', serif;
@@ -404,9 +404,8 @@ body {
 }
 
 .about {
-  padding: 4rem 1rem;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1920px;
 }
 
 .about-title h1 {
@@ -417,6 +416,10 @@ body {
   text-align: center;
   color: white;
   margin-bottom: 4rem;
+}
+
+.about-description {
+  padding: 2rem 6rem;
 }
 
 .about-grid {
@@ -683,7 +686,7 @@ body {
     align-items: center;
     gap: 1rem;
     margin-bottom: 4rem;
-    padding: 0 2rem;
+    padding: 0 6rem;
     max-width: 1920px; /* Set a max-width */
     margin: 0 auto; /* Center the header */
     margin-top: 4rem; /* Add top margin for consistent spacing */
