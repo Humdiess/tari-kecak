@@ -246,157 +246,149 @@ body {
 
 /* History Section Styles */
 .history-section {
-    background-color: #131314;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: visible;
-    padding-bottom: 4rem; /* Add bottom padding for consistent spacing */
+  background-color: #131314;
+  color: white;
+  padding: 4rem 1rem;
+  overflow: hidden;
 }
 
 .history-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.history-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .history-title h1 {
-    font-size: 64px;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-family: 'Italiana', serif;
-    max-width: 36rem;
-    margin-bottom: 4rem; /* Consistent spacing */
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Italiana', serif;
+  margin-bottom: 3rem;
 }
 
 .history-timeline {
-    position: relative;
-    padding: 40px 0;
-    max-width: 1200px;
-    margin: 0 auto;
+  position: relative;
+  padding: 2rem 0;
 }
 
 .history-timeline::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background: linear-gradient(to bottom, #131314, #454545);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: linear-gradient(to bottom, #131314, #454545);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .timeline-item {
-    position: relative;
-    width: 100%;
-    display: flex;
+  position: relative;
+  display: flex;
+  margin-bottom: 3rem;
 }
 
 .timeline-content {
-    width: 35%; /* Reduced from 45% */
-    max-width: 850px; /* Add max-width for better control */
-    padding: 20px;
-    color: white;
+  width: 45%;
+  position: relative;
 }
 
 .timeline-dot {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background: #FFD700;
-    border-radius: 50%;
-    top: 64px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #FFD700;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
 .timeline-item:nth-child(odd) {
-    justify-content: flex-end;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-    text-align: left;
-}
-
-.timeline-item:nth-child(even) {
-    justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    text-align: right;
+  /* margin-left: auto; */
+  justify-content: start;
+  text-align: right;
 }
 
 .timeline-year {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .timeline-text {
-    line-height: 1.6;
-    font-size: 14px;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .history-timeline::after {
-        left: 31px; /* Align line to the left on mobile */
-    }
-
-    .timeline-item {
-        justify-content: flex-start;
-    }
-
-    .timeline-content {
-        width: calc(100% - 60px);
-        text-align: left;
-        padding: 20px;
-    }
-
-    .timeline-dot {
-        left: 31px;
-        transform: translateX(-50%);
-    }
-
-    .timeline-item:nth-child(odd) .timeline-content,
-    .timeline-item:nth-child(even) .timeline-content {
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align: left;
-    }
-}
-
-/* Read More Button Styling for History Section */
 .readmore {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .readmore a {
-    font-family: 'Merriweather', serif;
-    color: #FFD700;
-    text-decoration: none;
-    padding: 1rem 5rem;
-    border: 1px solid #FFD700;
-    font-size: 14px;
-    transition: all 0.3s ease;
+  font-family: 'Merriweather', serif;
+  color: #FFD700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border: 1px solid #FFD700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .readmore a:hover {
-    background-color: #FFD700;
-    color: #131314;
+  background-color: #FFD700;
+  color: #131314;
+}
+
+@media screen and (max-width: 768px) {
+  .history-title h1 {
+      font-size: 2.5rem;
+  }
+
+  .history-timeline::after {
+      left: 1rem;
+  }
+
+  .timeline-item {
+      flex-direction: column;
+      margin-left: 2rem;
+  }
+
+  .timeline-content {
+      width: 100%;
+      margin-left: 0 !important;
+      padding: 1rem 0;
+  }
+
+  .timeline-dot {
+      left: -1.5rem;
+      top: 1.5rem;
+  }
+
+  .timeline-year {
+      font-size: 1.1rem;
+  }
+
+  .timeline-text {
+      font-size: 0.9rem;
+  }
+
+  .readmore a {
+      padding: 0.8rem 2rem;
+      font-size: 0.9rem;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    /* margin-left: auto; */
+    justify-content: start;
+    text-align: start;
+  }
 }
 
 /* Read More Button Styling for About Section */
