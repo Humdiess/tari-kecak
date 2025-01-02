@@ -73,3 +73,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  const socialLinks = document.getElementById('socialLinks');
+
+  navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      socialLinks.classList.toggle('active');
+      navToggle.innerHTML = navLinks.classList.contains('active') 
+          ? '<i class="fas fa-times"></i>' 
+          : '<i class="fas fa-bars"></i>';
+  });
