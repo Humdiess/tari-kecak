@@ -1,0 +1,64 @@
+/* Hero Section Styles */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('./assets/img/uluwatu-bg.jpg');
+    background-size: cover;
+    filter: brightness(0.45);
+    margin-top: -14rem;
+}
+
+.hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #131314, transparent);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.hero-title h1 {
+    font-family: 'Italiana', serif;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 141.36px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    max-width: 42rem;
+    margin: 0;
+}
+
+.scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    top: calc(100% - 4rem); /* Adjust to align with the title */
+}
+
+.scroll-text {
+    color: white;
+    font-weight: 700;
+    padding: 0 1rem;
+    border-radius: 0.25rem;
+    font-family: 'Merriweather', serif;
+    font-size: 1.125rem;
+    text-decoration: none;
+}

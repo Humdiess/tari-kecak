@@ -1,0 +1,157 @@
+/* History Section Styles */
+.history-section {
+    background-color: #131314;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.history-title h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Italiana', serif;
+    max-width: 36rem;
+}
+
+.history-timeline {
+    position: relative;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Vertical line */
+.history-timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: linear-gradient(to bottom, #131314, #454545);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+/* Content boxes */
+.timeline-content {
+    width: 35%; /* Reduced from 45% */
+    max-width: 850px; /* Add max-width for better control */
+    padding: 20px;
+    color: white;
+}
+
+/* Year dots */
+.timeline-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #FFD700;
+    border-radius: 50%;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Left side items */
+.timeline-item:nth-child(odd) {
+    justify-content: flex-end;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    text-align: left;
+}
+
+/* Right side items */
+.timeline-item:nth-child(even) {
+    justify-content: flex-start;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    text-align: right;
+}
+
+.timeline-year {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-text {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .history-timeline::after {
+        left: 31px; /* Align line to the left on mobile */
+    }
+
+    .timeline-item {
+        justify-content: flex-start;
+    }
+
+    .timeline-content {
+        width: calc(100% - 60px);
+        text-align: left;
+        padding: 20px;
+    }
+
+    .timeline-dot {
+        left: 31px;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: left;
+    }
+}
+
+/* Read More Button Styling for History Section */
+.readmore {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.readmore a {
+    font-family: 'Merriweather', serif;
+    color: #FFD700;
+    text-decoration: none;
+    padding: 1rem 5rem;
+    border: 1px solid #FFD700;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.readmore a:hover {
+    background-color: #FFD700;
+    color: #131314;
+}
