@@ -391,104 +391,100 @@ body {
   }
 }
 
-/* Read More Button Styling for About Section */
-.readmore-about {
-    margin-top: 6rem;
-}
-
-.readmore-about a {
-    font-family: 'Merriweather', serif;
-    color: #FFD700;
-    text-decoration: none;
-    padding: 1rem 4rem;
-    border: 1px solid #FFD700;
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
-
-.readmore-about a:hover {
-    background-color: #FFD700;
-    color: #131314;
-}
-
-.history-overlay-1,
-.history-overlay-2 {
-    position: absolute;
-}
-
-.history-overlay-1 {
-    margin-right: 54rem;
-    margin-top: 3.5rem;
-    width: 26rem;
-}
-
-.history-overlay-2 {
-    margin-left: 48rem;
-    margin-top: 55rem;
-    width: 23rem;
-}
-
-.history-overlay-1 img {
-    width: 100%;
-    height: auto;
-}
-
-/* About Section Styles */
-.about-title h1 {
-    font-family: Italiana;
-    font-size: 64px;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: white;
-    margin-bottom: 4rem; /* Consistent spacing */
-}
-
 .about {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem; /* Add top margin for consistent spacing */
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-title h1 {
+  font-family: 'Italiana', serif;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
 }
 
 .about-grid {
   display: flex;
-  justify-content: center; /* Center the items horizontally */
-  padding: 4rem 0;
-  max-width: 1920px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
 }
 
 .about-description,
 .about-image {
-    flex: 1;
-    max-width: 50%;
-    box-sizing: border-box; /* Ensure padding does not affect width */
+  flex: 1;
 }
 
-.about-description {
-    padding: 4rem 8rem 6rem 6rem;
-    color: white;
-    font-family: 'Merriweather', serif;
-    font-size: 1.125rem;
-    line-height: 1.6;
-}
-
-.about-image {
-    text-align: right;
-    position: relative;
+.about-description p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: white;
 }
 
 .about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
-.about-image-overlay {
-    position: absolute;
-    margin-top: -26rem;
-    margin-left: -26rem;
+.readmore-about {
+  margin-top: 3rem;
+}
+
+.readmore-about a {
+  font-family: 'Merriweather', serif;
+  color: #FFD700;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  border: 1px solid #FFD700;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.readmore-about a:hover {
+  background-color: #FFD700;
+  color: #131314;
+}
+
+@media screen and (max-width: 768px) {
+  .about-title h1 {
+      font-size: 36px;
+  }
+
+  .about-grid {
+      flex-direction: column;
+      gap: 2rem;
+  }
+
+  .about-image {
+      order: -1; /* This moves the image to the top on mobile */
+  }
+
+  .about-description p {
+      font-size: 1rem;
+  }
+
+  .readmore-about {
+      text-align: center;
+  }
+
+  .readmore-about a {
+      padding: 0.8rem 3rem;
+  }
+
+  .about-image-overlay {
+    display: hidden !important;
+  }
+
+  .about-image-overlay img {
+    display: hidden !important;
+  }
 }
 
 /* Ticketing Section Styles */
