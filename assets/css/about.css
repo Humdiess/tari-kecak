@@ -1,7 +1,6 @@
 .about {
     margin: 0 auto;
     max-width: 1920px;
-    background-color: #131314;
   }
   
   .about-title h1 {
@@ -15,7 +14,7 @@
   }
   
   .about-description {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
   }
   
   .about-grid {
@@ -30,12 +29,8 @@
     flex: 1;
   }
 
-  .about-image {
-    max-width: 600px;
-  }
-
   .about-description {
-    max-width: 800px;
+    max-width: 1024px;
   }
   
   .about-description p {
@@ -87,12 +82,12 @@
     }
   
     .about-grid {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 2rem;
     }
-  
-    .about-image {
-        order: -1; /* This moves the image to the top on mobile */
+
+    .about-image-overlay {
+      display: none;
     }
   
     .about-description p {

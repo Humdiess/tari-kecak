@@ -7,7 +7,7 @@
 }
 
 .ticketing-title h1 {
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
     margin-bottom: 2rem;
     text-align: center;
@@ -17,29 +17,9 @@
     margin-bottom: 4rem; /* Consistent spacing */
 }
 
-@media (max-width: 1280px) {
-    .ticketing-title h1 {
-        font-size: var(--font-size-medium);
-        max-width: 28rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .ticketing-title h1 {
-        font-size: var(--font-size-medium);
-        max-width: 28rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .ticketing-title h1 {
-        font-size: var(--font-size-small);
-        max-width: 20rem;
-    }
-}
-
 .ticketing {
-        margin-top: 4rem; /* Add top margin for consistent spacing */
+    min-height: 100vh;
+    margin-top: 4rem; /* Add top margin for consistent spacing */
 }
 
 .ticketing-title {
@@ -140,23 +120,20 @@
     font-size: 1.25rem;
     font-weight: 700;
     color: inherit;
+    font-family: var(--font-family-italiana);
 }
 
 .show-times {
-    margin-top: 4rem;
     display: flex;
     flex-direction: column;
-}
-
-.items-list {
-    margin-top: 40px;
+    gap: 1rem;
 }
 
 .show-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem;
+    padding: 1.5rem;
     border-radius: 12px;
     color: var(--color-white);
 }
@@ -188,5 +165,86 @@
   font-size: var(--font-size-small);
   color: var(--color-white);
 }
+@media (max-width: 940px) {
+    .ticketing-grid {
+        grid-template-columns: 1fr;
+    }
 
+    .ticketing-image {
+        height: 300px;
+    }
 
+    .image-caption {
+        padding: 2rem;
+    }
+
+    .image-caption h2 {
+        font-size: 24px;
+    }
+
+    .date-selector {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .date-item .day, .date-item .month {
+        font-size: 1rem;
+    }
+
+    .show-item {
+        padding: 1rem;
+    }
+
+    .show-info h3 {
+        font-size: 20px;
+    }
+
+    .show-price p {
+        font-size: 16px;
+    }
+
+    .book-btn a {
+        font-size: var(--font-size-small);
+    }
+}
+
+@media (max-width: 768px) {
+    .ticketing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ticketing-image {
+        height: 300px;
+    }
+
+    .image-caption {
+        padding: 2rem;
+    }
+
+    .image-caption h2 {
+        font-size: 24px;
+    }
+
+    .date-selector {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .date-item .day, .date-item .month {
+        font-size: 1rem;
+    }
+
+    .show-item {
+        padding: 1rem;
+    }
+
+    .show-info h3 {
+        font-size: 20px;
+    }
+
+    .show-price p {
+        font-size: 16px;
+    }
+
+    .book-btn a {
+        font-size: var(--font-size-small);
+    }
+}
