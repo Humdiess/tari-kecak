@@ -1,55 +1,72 @@
+:root {
+    --font-family-italiana: "Italiana", serif;
+    --font-family-merriweather: "Merriweather", serif;
+    --color-white: #ffffff;
+    --color-black: #131314;
+    --color-gold: #ffd700;
+    --color-gray: #454545;
+    --color-overlay: rgba(0, 0, 0, 0.5);
+    --font-size-large: 64px;
+    --font-size-medium: 1.125rem;
+    --font-size-small: 14px;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+}
+
 /* Font Styles */
 .font-italiana {
-    font-family: "Italiana", serif;
-    font-weight: 400;
+    font-family: var(--font-family-italiana);
+    font-weight: var(--font-weight-regular);
     font-style: normal;
 }
 
 .merriweather-light {
-    font-family: "Merriweather", serif;
-    font-weight: 300;
+    font-family: var(--font-family-merriweather);
+    font-weight: var(--font-weight-light);
     font-style: normal;
 }
 
 .merriweather-regular {
-    font-family: "Merriweather", serif;
-    font-weight: 400;
+    font-family: var(--font-family-merriweather);
+    font-weight: var(--font-weight-regular);
     font-style: normal;
 }
 
 .merriweather-bold {
-    font-family: "Merriweather", serif;
-    font-weight: 700;
+    font-family: var(--font-family-merriweather);
+    font-weight: var(--font-weight-bold);
     font-style: normal;
 }
 
 .merriweather-black {
-    font-family: "Merriweather", serif;
-    font-weight: 900;
+    font-family: var(--font-family-merriweather);
+    font-weight: var(--font-weight-black);
     font-style: normal;
 }
 
 .merriweather-light-italic {
-    font-family: "Merriweather", serif;
-    font-weight: 300;
+    font-family: var(--font-family-merriweather);
+    font-weight: var(--font-weight-light);
     font-style: italic;
 }
 
 .merriweather-regular-italic {
-    font-family: "Merriweather", serif;
-    font-weight: 400;
+    font-family: var(--font-family-merriweather);
+    font-weight: var(--font-weight-regular);
     font-style: italic;
 }
 
 .merriweather-bold-italic {
-    font-family: "Merriweather", serif;
-    font-weight: 700;
+    font-family: var(--font-family-merriweather);
+    font-weight: var(--font-weight-bold);
     font-style: italic;
 }
 
 .merriweather-black-italic {
-    font-family: "Merriweather", serif;
-    font-weight: 900;
+    font-family: var(--font-family-merriweather);
+    font-weight: var(--font-weight-black);
     font-style: italic;
 }
 
@@ -57,9 +74,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family-merriweather);
     overflow-x: hidden;
-    background-color: #131314;
+    background-color: var(--color-black);
     height: 500rem;
 }
 
@@ -92,7 +109,7 @@ body {
 
 .nav-toggle {
   display: none;
-  color: white;
+  color: var(--color-white);
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 1000;
@@ -105,14 +122,14 @@ body {
 }
 
 .nav-links a {
-  color: white;
-  font-size: 1.125rem;
+  color: var(--color-white);
+  font-size: var(--font-size-medium);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #ffd700;
+  color: var(--color-gold);
 }
 
 .social-links {
@@ -121,13 +138,13 @@ body {
 }
 
 .social-links a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #ffd700;
+  color: var(--color-gold);
 }
 
 .social-links i {
@@ -202,20 +219,20 @@ body {
 .hero-gradient {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, #131314, transparent);
+    background: linear-gradient(to top, var(--color-black), transparent);
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
     text-align: center;
-    color: white;
+    color: var(--color-white);
 }
 
 .hero-title h1 {
-    font-family: 'Italiana', serif;
+    font-family: var(--font-family-italiana);
     font-size: 120px;
-    font-weight: 400;
+    font-weight: var(--font-weight-regular);
     line-height: 141.36px;
     letter-spacing: 0.1em;
     text-align: center;
@@ -235,31 +252,30 @@ body {
 }
 
 .scroll-text {
-    color: white;
-    font-weight: 700;
+    color: var(--color-white);
+    font-weight: var(--font-weight-bold);
     padding: 0 1rem;
     border-radius: 0.25rem;
-    font-family: 'Merriweather', serif;
-    font-size: 1.125rem;
+    font-family: var(--font-family-merriweather);
+    font-size: var(--font-size-medium);
     text-decoration: none;
 }
 
 /* History Section Styles */
-
 .history-overlay-1 {
-    position: absolute;
-    margin-left: 32rem;
+  position: absolute;
+  margin-left: 32rem;
 }
 
 .history-overlay-2 {
-    position: absolute;
-    margin-left: 84rem;
-    margin-top: 40rem;
+  position: absolute;
+  margin-left: 84rem;
+  margin-top: 40rem;
 }
 
 .history-section {
-  background-color: #131314;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
   padding: 4rem 1rem;
   overflow: hidden;
 }
@@ -270,10 +286,10 @@ body {
 }
 
 .history-title h1 {
-  font-size: 64px;
-  font-weight: 700;
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
   text-align: center;
-  font-family: 'Italiana', serif;
+  font-family: var(--font-family-italiana);
   margin-bottom: 3rem;
 }
 
@@ -286,7 +302,7 @@ body {
   content: '';
   position: absolute;
   width: 2px;
-  background: linear-gradient(to bottom, #131314, #454545);
+  background: linear-gradient(to bottom, var(--color-black), var(--color-gray));
   top: 0;
   bottom: 0;
   left: 50%;
@@ -308,7 +324,7 @@ body {
   position: absolute;
   width: 12px;
   height: 12px;
-  background: #FFD700;
+  background: var(--color-gold);
   border-radius: 50%;
   top: 0;
   left: 50%;
@@ -343,19 +359,29 @@ body {
 }
 
 .readmore a {
-  font-family: 'Merriweather', serif;
-  color: #FFD700;
+  font-family: var(--font-family-merriweather);
+  color: var(--color-gold);
   text-decoration: none;
   padding: 1rem 3rem;
-  border: 1px solid #FFD700;
+  border: 1px solid var(--color-gold);
   font-size: 1rem;
   transition: all 0.3s ease;
   display: inline-block;
 }
 
 .readmore a:hover {
-  background-color: #FFD700;
-  color: #131314;
+  background-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+@media screen and (max-width: 1024px) {
+  .history-overlay-1 {
+      display: none;
+  }
+
+  .history-overlay-2 {
+      display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -401,6 +427,14 @@ body {
     justify-content: start;
     text-align: start;
   }
+
+  .history-overlay-1 {
+      display: none;
+  }
+
+  .history-overlay-2 {
+      display: none;
+  }
 }
 
 .about {
@@ -409,12 +443,12 @@ body {
 }
 
 .about-title h1 {
-  font-family: 'Italiana', serif;
-  font-size: 64px;
-  font-weight: 400;
+  font-family: var(--font-family-italiana);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-regular);
   letter-spacing: 0.1em;
   text-align: center;
-  color: white;
+  color: var(--color-white);
   margin-bottom: 4rem;
 }
 
@@ -435,10 +469,10 @@ body {
 }
 
 .about-description p {
-  font-size: 1.125rem;
+  font-size: var(--font-size-medium);
   line-height: 1.6;
   margin-bottom: 2rem;
-  color: white;
+  color: var(--color-white);
 }
 
 .about-image img {
@@ -452,19 +486,19 @@ body {
 }
 
 .readmore-about a {
-  font-family: 'Merriweather', serif;
-  color: #FFD700;
+  font-family: var(--font-family-merriweather);
+  color: var(--color-gold);
   text-decoration: none;
   padding: 1rem 4rem;
-  border: 1px solid #FFD700;
-  font-size: 14px;
+  border: 1px solid var(--color-gold);
+  font-size: var(--font-size-small);
   transition: all 0.3s ease;
   display: inline-block;
 }
 
 .readmore-about a:hover {
-  background-color: #FFD700;
-  color: #131314;
+  background-color: var(--color-gold);
+  color: var(--color-black);
 }
 
 @media screen and (max-width: 768px) {
@@ -511,13 +545,13 @@ body {
 }
 
 .ticketing-title h1 {
-    font-size: 64px;
-    font-weight: 700;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
     margin-bottom: 2rem;
     text-align: center;
-    font-family: 'Italiana', serif;
+    font-family: var(--font-family-italiana);
     max-width: 36rem;
-    color: white;
+    color: var(--color-white);
     margin-bottom: 4rem; /* Consistent spacing */
 }
 
@@ -535,13 +569,13 @@ body {
 }
 
 .ticketing-title h1 {
-    font-size: 64px;
-    font-weight: 700;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
     margin-bottom: 2rem;
     text-align: center;
-    font-family: 'Italiana', serif;
+    font-family: var(--font-family-italiana);
     max-width: 36rem;
-    color: white;
+    color: var(--color-white);
     margin-bottom: 4rem; /* Consistent spacing */
 }
 
@@ -575,14 +609,14 @@ body {
     bottom: 0;
     right: 0;
     padding: 4rem;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
-    color: white;
+    background: linear-gradient(to top, var(--color-overlay), rgba(0,0,0,0));
+    color: var(--color-white);
 }
 
 .image-caption h2 {
     font-size: 36px;
     margin-bottom: 0.5rem;
-    font-family: 'Italiana', serif;
+    font-family: var(--font-family-italiana);
 }
 
 .image-caption p {
@@ -608,7 +642,7 @@ body {
     padding: 1rem 0.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    color: white;
+    color: var(--color-white);
     gap: 0.5rem;
 }
 
@@ -617,8 +651,8 @@ body {
 }
 
 .date-item.active {
-    color: white;
-    border-bottom: 2px solid #FFD700;
+    color: var(--color-white);
+    border-bottom: 2px solid var(--color-gold);
 }
 
 .date-item .day, .date-item .month {
@@ -639,7 +673,7 @@ body {
     align-items: center;
     padding: 1.5rem;
     border-radius: 12px;
-    color: white;
+    color: var(--color-white);
 }
 
 .show-info h3 {
@@ -656,18 +690,18 @@ body {
 .show-price p {
     font-size: 20px;
     font-weight: 600;
-    color: #ffd700;
+    color: var(--color-gold);
 }
 
 .book-btn {
   text-decoration: none;
-  color: white;
+  color: var(--color-white);
 }
 
 .book-btn a {
-  font-family: 'Merriweather', serif;
-  font-size: 14px;
-  color: white;
+  font-family: var(--font-family-merriweather);
+  font-size: var(--font-size-small);
+  color: var(--color-white);
 }
 
 /* Gallery Section Styles */
@@ -684,22 +718,22 @@ body {
 }
 
 .gallery-header h2 {
-    font-family: 'Italiana', serif;
-    font-size: 64px;
-    font-weight: 400;
+    font-family: var(--font-family-italiana);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-regular);
     letter-spacing: 0.1em;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: white;
+    color: var(--color-white);
     margin-bottom: 4rem; /* Consistent spacing */
 }
 
 .gallery-header a {
-    font-family: 'Merriweather', serif;
-    color: white;
+    font-family: var(--font-family-merriweather);
+    color: var(--color-white);
     text-decoration: none;
-    font-size: 14px;
+    font-size: var(--font-size-small);
     transition: all 0.3s ease;
 }
 
@@ -789,7 +823,7 @@ body {
 }
 
 .stick {
-    background: linear-gradient(to bottom, #454545, #131314);
+    background: linear-gradient(to bottom, var(--color-gray), var(--color-black));
     width: 0.1rem;
     gap: 0px;
     opacity: 1;
