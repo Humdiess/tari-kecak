@@ -9,16 +9,14 @@
 .ticketing-title h1 {
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     text-align: center;
     font-family: var(--font-family-italiana);
     max-width: 36rem;
     color: var(--color-white);
-    margin-bottom: 4rem; /* Consistent spacing */
 }
 
 .ticketing {
-    min-height: 100vh;
     margin-top: 4rem; /* Add top margin for consistent spacing */
 }
 
@@ -27,7 +25,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .ticketing-title h1 {
@@ -195,11 +193,11 @@
     }
 
     .show-info h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .show-price p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .book-btn a {
@@ -237,11 +235,11 @@
     }
 
     .show-info h3 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .show-price p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .book-btn a {

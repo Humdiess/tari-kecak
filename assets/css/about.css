@@ -46,14 +46,19 @@
 
   .about-image-overlay {
     position:absolute;
-    margin-top: -26rem;
-    margin-left: -26rem;
+    margin-top: -16vw;
+    margin-left: -16vw;
+    max-width: 500px;
+    width: 500px;
   }
-  
-  .about-image img {
-    max-width: 100%;
+
+  .about-image-overlay img {
+    width: 100%;
     height: auto;
-    border-radius: 0.5rem;
+  }
+  .about-image img {
+    max-width: 45vw;
+    height: auto;
   }
   
   .readmore-about {
@@ -75,12 +80,21 @@
     background-color: var(--color-gold);
     color: var(--color-black);
   }
+
+  @media screen and (max-width: 1280px) {
+    .about-image-overlay {
+      display: none;
+    }
+  }
   
   @media screen and (max-width: 768px) {
     .about-title h1 {
         font-size: 36px;
     }
   
+    .about-image img {
+        max-width: 100%;
+    }
     .about-grid {
         flex-direction: column-reverse;
         gap: 2rem;
