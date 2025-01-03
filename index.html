@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     
     <!-- bootstrap -->
-     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/cff8b87f33.js" crossorigin="anonymous"></script>
@@ -31,7 +30,7 @@
     <div class="nav-bar">
       <div class="navs-container d-flex justify-content-between align-items-center px-5 py-4">
           <a href="#" class="nav-logo">
-              <img src="./assets/logo/kecak-uluwatu.svg" alt="Kecak Uluwatu Logo">
+              <img src="./assets/logo/kecak-uluwatu.svg" alt="Kecak Uluwatu Logo" loading="lazy">
           </a>
           <div class="nav-toggle" id="navToggle">
               <i class="fas fa-bars"></i>
@@ -71,10 +70,10 @@
 
       <div class="history-content">
         <div class="history-overlay-1">
-          <img src="./assets/img/pattern.svg" alt="">
+          <img src="./assets/img/pattern.svg" alt="" loading="lazy">
         </div>
         <div class="history-overlay-2">
-          <img src="./assets/img/pattern2.svg" alt="">
+          <img src="./assets/img/pattern2.svg" alt="" loading="lazy">
         </div>
         <div class="history-title">
           <h1 class="fs-1" data-key="historyTitle">History of <br> Tari Kecak Uluwatu</h1>
@@ -143,10 +142,10 @@
           </div>
           <div class="about-image-wrapper">
             <div class="about-image">
-              <img src="./assets/img/about-kecak.png" alt="Tari Kecak Uluwatu">
+              <img src="./assets/img/about-kecak.png" alt="Tari Kecak Uluwatu" loading="lazy">
             </div>
             <div class="about-image-overlay">
-              <img src="/assets/img/about-kecak-2.png" alt="">
+              <img src="/assets/img/about-kecak-2.png" alt="" loading="lazy">
             </div>
           </div>
         </div>
@@ -162,7 +161,7 @@
       <div class="ticketing-content">
       <div class="ticketing-grid">
         <div class="ticketing-image">
-        <img src="/assets/img/ticketing-image.png" alt="Tari Kecak Uluwatu Performance">
+        <img src="/assets/img/ticketing-image.png" alt="Tari Kecak Uluwatu Performance" loading="lazy">
         <div class="image-caption">
           <h2>Tari Kecak Uluwatu</h2>
           <p>Start from</p>
@@ -171,32 +170,32 @@
         </div>
         
         <div class="ticketing-details">
-        <div class="date-selector">
-          <div class="date-item" data-date="23">
-          <span class="day">23</span>
-          <span class="month">Dec</span>
+          <div class="date-selector">
+            <div class="date-item" data-date="23">
+            <span class="day">23</span>
+            <span class="month">Dec</span>
+              </div>
+              <div class="date-item" data-date="24">
+            <span class="day">24</span>
+            <span class="month">Dec</span>
+              </div>
+              <div class="date-item" data-date="25">
+            <span class="day">25</span>
+            <span class="month">Dec</span>
+            </div>
+            <div class="date-item" data-date="26">
+            <span class="day">26</span>
+            <span class="month">Dec</span>
+            </div>
+            <div class="date-item" data-date="27">
+            <span class="day">27</span>
+            <span class="month">Dec</span>
+            </div>
+            <div class="date-item" data-date="28">
+            <span class="day">28</span>
+            <span class="month">Dec</span>
+            </div>
           </div>
-          <div class="date-item" data-date="24">
-          <span class="day">24</span>
-          <span class="month">Dec</span>
-          </div>
-          <div class="date-item" data-date="25">
-          <span class="day">25</span>
-          <span class="month">Dec</span>
-          </div>
-          <div class="date-item" data-date="26">
-          <span class="day">26</span>
-          <span class="month">Dec</span>
-          </div>
-          <div class="date-item" data-date="27">
-          <span class="day">27</span>
-          <span class="month">Dec</span>
-          </div>
-          <div class="date-item" data-date="28">
-          <span class="day">28</span>
-          <span class="month">Dec</span>
-          </div>
-        </div>
           <div class="items-list">
             <div class="show-item">
               <div class="show-info">
@@ -259,22 +258,22 @@
       </div>
       <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="assets/img/grid.jpg" alt="Cultural event 1">
+            <img src="assets/img/grid.jpg" alt="Cultural event 1" loading="lazy">
         </div>
         <div class="gallery-item">
-            <img src="assets/img/grid-1.jpg" alt="Cultural event 2">
+            <img src="assets/img/grid-1.jpg" alt="Cultural event 2" loading="lazy">
         </div>
         <div class="gallery-item">
-            <img src="assets/img/grid-2.jpg" alt="Cultural event 3">
+            <img src="assets/img/grid-2.jpg" alt="Cultural event 3" loading="lazy">
         </div>
         <div class="gallery-item">
-            <img src="assets/img/grid-3.jpg" alt="Cultural event 4">
+            <img src="assets/img/grid-3.jpg" alt="Cultural event 4" loading="lazy">
         </div>
         <div class="gallery-item">
-            <img src="assets/img/grid-4.jpg" alt="Cultural event 5">
+            <img src="assets/img/grid-4.jpg" alt="Cultural event 5" loading="lazy">
         </div>
         <div class="gallery-item">
-            <img src="assets/img/grid-5.jpg" alt="Cultural event 6">
+            <img src="assets/img/grid-5.jpg" alt="Cultural event 6" loading="lazy">
         </div>
     </section>
 
@@ -367,6 +366,8 @@
         </div>
     </footer>
     <script src="./main.js" defer></script>
+    <!-- Defer loading of Bootstrap JS -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         fetch('content.json')

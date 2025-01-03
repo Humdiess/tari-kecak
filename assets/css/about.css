@@ -45,9 +45,9 @@
   }
 
   .about-image-overlay {
-    position:absolute;
-    margin-top: -16vw;
-    margin-left: -16vw;
+    position: absolute;
+    margin-top: -16rem;
+    margin-left: -16rem;
     max-width: 500px;
     width: 500px;
   }
