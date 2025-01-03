@@ -1,0 +1,184 @@
+/* History Section Styles */
+.history-overlay-1 {
+    position: absolute;
+    margin-right: 256rem;
+    z-index: 1;
+    width: 23rem;
+  }
+
+  .history-overlay-1 img {
+    width: 100%;
+  }
+  
+  .history-overlay-2 {
+    position: absolute;
+    margin-left: 48rem;
+    margin-top: 48rem;
+  }
+  
+  .history-section {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 4rem 1rem;
+    overflow: hidden;
+  }
+  
+  .history-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .history-title h1 {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    font-family: var(--font-family-italiana);
+    margin-bottom: 3rem;
+    z-index: 2;
+  }
+  
+  .history-timeline {
+    position: relative;
+    padding: 2rem 0;
+  }
+  
+  .history-timeline::after {
+    content: '';
+    position: absolute;
+    width: 0.2rem;
+    background: linear-gradient(to bottom, var(--color-black), var(--color-gray));
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    position: relative;
+    display: flex;
+    margin-bottom: 3rem;
+  }
+  
+  .timeline-content {
+    width: 45%;
+    position: relative;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--color-gold);
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  .timeline-item:nth-child(odd) {
+    justify-content: flex-end;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content {
+    /* margin-left: auto; */
+    justify-content: start;
+    text-align: right;
+  }
+  
+  .timeline-year {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-text {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .readmore {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .readmore a {
+    font-family: var(--font-family-merriweather);
+    color: var(--color-gold);
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border: 1px solid var(--color-gold);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .readmore a:hover {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .history-overlay-1 {
+        display: none;
+    }
+  
+    .history-overlay-2 {
+        display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .history-title h1 {
+        font-size: 2.5rem;
+    }
+  
+    .history-timeline::after {
+        left: 1rem;
+    }
+  
+    .timeline-item {
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+  
+    .timeline-content {
+        width: 100%;
+        margin-left: 0 !important;
+        padding: 1rem 0;
+    }
+  
+    .timeline-dot {
+        left: -1.5rem;
+        top: 1.5rem;
+    }
+  
+    .timeline-year {
+        font-size: 1.1rem;
+    }
+  
+    .timeline-text {
+        font-size: 0.9rem;
+    }
+  
+    .readmore a {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+  
+    .timeline-item:nth-child(even) .timeline-content {
+      /* margin-left: auto; */
+      justify-content: start;
+      text-align: start;
+    }
+  
+    .history-overlay-1 {
+        display: none;
+    }
+  
+    .history-overlay-2 {
+        display: none;
+    }
+  }
+  
+  

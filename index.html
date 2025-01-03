@@ -7,6 +7,17 @@
     <meta name="author" content="humdiee.js" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/history.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/ticketing.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    
+    <!-- bootstrap -->
+     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/cff8b87f33.js" crossorigin="anonymous"></script>
@@ -18,8 +29,8 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
-      <div class="nav-container">
+    <div class="nav-bar">
+      <div class="navs-container d-flex justify-content-between align-items-center px-5 py-4">
           <a href="#" class="nav-logo">
               <img src="./assets/logo/kecak-uluwatu.svg" alt="Kecak Uluwatu Logo">
           </a>
@@ -38,7 +49,7 @@
               <a href="#"><i class="fab fa-youtube"></i></a>
           </div>
       </div>
-  </nav>
+  </div>
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -103,7 +114,7 @@
             </div>
           </div>
         
-          <div class="timeline-item">
+          <div class="timeline-item"></div>
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-year">2000 - Present</div>
@@ -132,8 +143,13 @@
               <a href="#">Read More</a>
             </div>
           </div>
-          <div class="about-image">
-            <img src="./assets/img/about-kecak.png" alt="Tari Kecak Uluwatu">
+          <div class="about-image-wrapper">
+            <div class="about-image">
+              <img src="./assets/img/about-kecak.png" alt="Tari Kecak Uluwatu">
+            </div>
+            <div class="about-image-overlay">
+              <img src="/assets/img/about-kecak-2.png" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -183,50 +199,52 @@
           <span class="month">Dec</span>
           </div>
         </div>
-        
-        <div class="show-item">
-          <div class="show-info">
-            <h3>Tari Kecak Uluwatu Show 2 <span class="time">(19:00 - 20:00)</span></h3>
-            <div class="show-price">
-              <a href="#" class="book-btn">See Details</a>
-              <i class="fas fa-arrow-right"></i>
-              <p>IDR 160.000</p>
-            </div>
-          </div>
-        </div>
-
-          <div class="show-item">
-            <div class="show-info">
-              <h3>Tari Kecak Uluwatu Show 2 <span class="time">(20:00 - 21:00)</span></h3>
-              <div class="show-price">
-                <a href="#" class="book-btn">See Details</a>
-                <i class="fas fa-arrow-right"></i>
-                <p>IDR 160.000</p>
+          <div class="items-list">
+            <div class="show-item">
+              <div class="show-info">
+                <h3>Tari Kecak Uluwatu Show 2 <span class="time">(19:00 - 20:00)</span></h3>
+                <div class="show-price">
+                  <a href="#" class="book-btn">See Details</a>
+                  <i class="fas fa-arrow-right"></i>
+                  <p>IDR 160.000</p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="show-item">
-            <div class="show-info">
-              <h3>Tari Kecak Uluwatu Show 3 <span class="time">(21:00 - 22:00)</span></h3>
-              <div class="show-price">
-                <a href="#" class="book-btn">See Details</a>
-                <i class="fas fa-arrow-right"></i>
-                <p>IDR 160.000</p>
+    
+              <div class="show-item">
+                <div class="show-info">
+                  <h3>Tari Kecak Uluwatu Show 2 <span class="time">(20:00 - 21:00)</span></h3>
+                  <div class="show-price">
+                    <a href="#" class="book-btn">See Details</a>
+                    <i class="fas fa-arrow-right"></i>
+                    <p>IDR 160.000</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="show-item">
-            <div class="show-info">
-              <h3>Tari Kecak Uluwatu Show 4 <span class="time">(22:00 - 23:00)</span></h3>
-              <div class="show-price">
-                <a href="#" class="book-btn">See Details</a>
-                <i class="fas fa-arrow-right"></i>
-                <p>IDR 160.000</p>
+    
+              <div class="show-item">
+                <div class="show-info">
+                  <h3>Tari Kecak Uluwatu Show 3 <span class="time">(21:00 - 22:00)</span></h3>
+                  <div class="show-price">
+                    <a href="#" class="book-btn">See Details</a>
+                    <i class="fas fa-arrow-right"></i>
+                    <p>IDR 160.000</p>
+                  </div>
+                </div>
               </div>
-            </div>
+    
+              <div class="show-item">
+                <div class="show-info">
+                  <h3>Tari Kecak Uluwatu Show 4 <span class="time">(22:00 - 23:00)</span></h3>
+                  <div class="show-price">
+                    <a href="#" class="book-btn">See Details</a>
+                    <i class="fas fa-arrow-right"></i>
+                    <p>IDR 160.000</p>
+                  </div>
+                </div>
+              </div>
           </div>
+    
           <div class="readmore">
             <a href="#">Read More</a>
           </div>
@@ -261,6 +279,95 @@
             <img src="assets/img/grid-5.jpg" alt="Cultural event 6">
         </div>
     </section>
-    <script src="./main.js"></script>
+
+    <section class="map-section-wrapper">
+      <div class="ticketing-title">
+        <h1>For more<br>information</h1>
+      </div>
+      <div class="information-container">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39425254392342695!2d115.08283437934571!3d-8830572900000002!2m3!1f0!2f0!3f0!3m2!1i104!2i768!4f131!3m3!1m2!1s0x2dd2500503808f13%3A0x34326be297b8d24!2sTari%20Kecak%20%26%20Api%20luwatu!5e0!3m2!1sid!2sid!4v17356488498465m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      
+      <div class="info-container">
+          <div class="location-info"></div>
+              <h3>Location :</h3>
+              <p class="location-details">
+                  Kawasan parkir Pura Uluwatu, Jl.Uluwatu, Pecatu, Kec. Kuta Sel.,Kabupaten Badung, Bali 80361,Indonesia
+              </p>
+          </div>
+          
+          <div class="contact-info">
+              <h3>Contact Person :</h3>
+              <div class="contact-person">
+                  <p>Mahesa Kabirawa :123-456-789</p>
+                  <p>Mahesa Kabirawa :123-456-789</p>
+              </div>
+              
+              <div class="social-links">
+                  <a href="#">@taribawakabirawabali</a>
+                  <a href="#">TaribawakabiraTY</a>
+                  <a href="#">taribarabali</a>
+              </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+      <section class="hero-section">
+          <div class="hero-content">
+              <h2>Come and experience Balinese<br>culture with us!</h2>
+          </div>
+      </section>
+
+       <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-brand">
+              <h3 class="brand-name">kecak<br>uluwatu.</h3>
+              <div class="social-icons">
+                  <a href="#" aria-label="Instagram"><img src="assets/instagram.png" alt="Instagram"></a>
+                  <a href="#" aria-label="Facebook"><img src="assets/facebook.png" alt="Facebook"></a>
+                  <a href="#" aria-label="YouTube"><img src="assets/youtube.png" alt="YouTube"></a>
+              </div>
+          </div>
+
+          <div class="footer-column">
+              <h4>Menu</h4>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Ticket</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Event</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-column">
+              <h4>Services</h4>
+              <ul>
+                  <li><a href="#">Booking Ticket</a></li>
+                  <li><a href="#">Booking Seat</a></li>
+                  <li><a href="#">Guides</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-column">
+              <h4>Help</h4>
+              <ul>
+                  <li><a href="#">How to booking ticket</a></li>
+                  <li><a href="#">Cancellation booking</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-column">
+              <h4>Information</h4>
+              <p class="address">Kawasan parkir Pura Uluwatu, Jl. Uluwatu, Pecatu, Kec. Kuta Sel., Kabupaten Badung, Bali 80361, Indonesia</p>
+              <p class="contact">123-456-789</p>
+              <p class="email">uluwatu@gmail.com</p>
+          </div>
+      </div>
+  </footer>
+  </div>
+    <script src="./main.js" defer></script>
   </body>
 </html>

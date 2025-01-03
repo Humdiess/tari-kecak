@@ -1,0 +1,192 @@
+/* Ticketing Section Styles */
+.ticketing-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticketing-title h1 {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: var(--font-family-italiana);
+    max-width: 36rem;
+    color: var(--color-white);
+    margin-bottom: 4rem; /* Consistent spacing */
+}
+
+@media (max-width: 1280px) {
+    .ticketing-title h1 {
+        font-size: var(--font-size-medium);
+        max-width: 28rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ticketing-title h1 {
+        font-size: var(--font-size-medium);
+        max-width: 28rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ticketing-title h1 {
+        font-size: var(--font-size-small);
+        max-width: 20rem;
+    }
+}
+
+.ticketing {
+        margin-top: 4rem; /* Add top margin for consistent spacing */
+}
+
+.ticketing-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.ticketing-title h1 {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: var(--font-family-italiana);
+    max-width: 36rem;
+    color: var(--color-white);
+    margin-bottom: 4rem; /* Consistent spacing */
+}
+
+.ticketing-content {
+    margin: 0 auto;
+}
+
+.ticketing-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1920px; /* Set a max-width for the grid */
+  margin: 0 auto; /* Center the grid */
+}
+
+.ticketing-image {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.ticketing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 4rem;
+    background: linear-gradient(to top, var(--color-overlay), rgba(0,0,0,0));
+    color: var(--color-white);
+}
+
+.image-caption h2 {
+    font-size: 36px;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-family-italiana);
+}
+
+.image-caption p {
+    margin: 0;
+}
+
+.image-caption .price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.date-selector {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.date-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--color-white);
+    gap: 0.5rem;
+}
+
+.date-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.date-item.active {
+    color: var(--color-white);
+    border-bottom: 2px solid var(--color-gold);
+}
+
+.date-item .day, .date-item .month {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: inherit;
+}
+
+.show-times {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.items-list {
+    margin-top: 40px;
+}
+
+.show-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    border-radius: 12px;
+    color: var(--color-white);
+}
+
+.show-info h3 {
+    font-size: 24px;
+    margin-bottom: 0.3rem;
+}
+
+.show-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.show-price p {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-gold);
+}
+
+.book-btn {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.book-btn a {
+  font-family: var(--font-family-merriweather);
+  font-size: var(--font-size-small);
+  color: var(--color-white);
+}
+
+
