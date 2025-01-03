@@ -573,15 +573,14 @@ body {
 .image-caption {
     position: absolute;
     bottom: 0;
-    left: 0;
     right: 0;
-    padding: 2rem;
+    padding: 4rem;
     background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
     color: white;
 }
 
 .image-caption h2 {
-    font-size: 2rem;
+    font-size: 36px;
     margin-bottom: 0.5rem;
     font-family: 'Italiana', serif;
 }
@@ -639,44 +638,36 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     color: white;
 }
 
 .show-info h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
-
-.show-info .time {
-    color: #cccccc;
+    font-size: 24px;
+    margin-bottom: 0.3rem;
 }
 
 .show-price {
-    text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .show-price p {
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    color: #ffd700;
 }
 
 .book-btn {
-    background-color: #ffffff;
-    color: #1a1a1a;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  color: white;
 }
 
-.book-btn:hover {
-    background-color: #f0f0f0;
-    transform: translateY(-2px);
+.book-btn a {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  color: white;
 }
 
 /* Gallery Section Styles */
