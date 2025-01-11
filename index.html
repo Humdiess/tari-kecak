@@ -7,13 +7,13 @@
     <meta name="author" content="humdiee.js" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="assets/css/about.css">
-    <link rel="stylesheet" href="assets/css/gallery.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/history.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/ticketing.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/about.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/gallery.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/hero.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/history.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/navbar.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/ticketing.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/footer.css" media="print" onload="this.media='all'">
     
     <!-- bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
@@ -36,10 +36,10 @@
               <i class="fas fa-bars"></i>
           </div>
           <div class="nav-links" id="navLinks">
-              <a href="#home" data-key="navHome">Home</a>
-              <a href="#ticket" data-key="navTicket">Ticket</a>
-              <a href="#gallery" data-key="navGallery">Gallery</a>
-              <a href="#contact" data-key="navContact">Contact</a>
+              <a href="#home">Home</a>
+              <a href="#ticket">Ticket</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#contact">Contact</a>
           </div>
           <div class="social-links" id="socialLinks">
               <a href="#"><i class="fab fa-instagram"></i></a>
@@ -54,7 +54,7 @@
       <div class="hero-gradient"></div>
       <div class="hero-content">
         <div class="hero-title">
-          <h1 data-key="heroTitle">Tari Kecak Uluwatu</h1>
+          <h1>Tari Kecak Uluwatu</h1>
         </div>
       </div>
       <div class="scroll-indicator">
@@ -76,14 +76,14 @@
           <img src="./assets/img/pattern2.svg" alt="" loading="lazy">
         </div>
         <div class="history-title">
-          <h1 class="fs-1" data-key="historyTitle">History of <br> Tari Kecak Uluwatu</h1>
+          <h1 class="fs-1">History of <br> Tari Kecak Uluwatu</h1>
         </div>
         <div class="history-timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-year">1930</div>
-              <div class="timeline-text" data-key="history1930">
+              <div class="timeline-text">
                 Tari Kecak dikembangkan oleh seniman Bali, Wayan Limbak, bersama pelukis Jerman, Walter Spies, dengan memadukan ritual tradisional Bali dan drama tari untuk menarik turis.
               </div>
             </div>
@@ -133,7 +133,7 @@
         </div>
         <div class="about-grid">
           <div class="about-description">
-            <p data-key="aboutDescription">
+            <p>
               Tari Kecak Uluwatu adalah tarian tradisional Bali yang dipentaskan di Pura Uluwatu saat matahari terbenam. Diiringi suara "cak" para penari pria tanpa alat musik, tarian ini mengisahkan penculikan Dewi Sita oleh Rahwana dalam epos Ramayana. Lebih dari 50 penari mengenakan kain kotak-kotak khas Bali, menciptakan suasana magis yang memadukan budaya dan tradisi Bali yang kaya.
             </p>
             <div class="readmore-about">
@@ -154,7 +154,7 @@
 
     <section class="ticketing" id="ticket">
       <div class="ticketing-title">
-      <h1 class="fs-1 mb-0" data-key="ticketingTitle">
+      <h1 class="fs-1 mb-0">
         Ticketing<br>Tari Kecak Uluwatu
       </h1>
       </div>
@@ -253,7 +253,7 @@
 
     <section class="gallery" id="gallery">
       <div class="gallery-header">
-        <h2 class="fs-1" data-key="galleryTitle">Gallery</h2>
+        <h2 class="fs-1">Gallery</h2>
         <a href="#" class="see-more">See more <span>→</span></a>
       </div>
       <div class="gallery-grid">
@@ -279,7 +279,7 @@
 
     <section class="map-section container" id="contact">
       <div class="section-header">
-          <h1 class="fs-1" data-key="contactTitle">For more<br>information</h1>
+          <h1 class="fs-1">For more<br>information</h1>
       </div>
       
       <div class="content-wrapper">
@@ -314,14 +314,14 @@
 
     <section class="last-section">
         <div class="last-content">
-            <h2 class="fs-1" data-key="lastSectionTitle">Come and experience   Balinese<br>culture with us!</h2>
+            <h2 class="fs-1">Come and experience   Balinese<br>culture with us!</h2>
         </div>
     </section>
   
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <h3   class="brand-name" data-key="footerBrand">kecak<br>uluwatu .</h3>
+                <h3   class="brand-name">kecak<br>uluwatu .</h3>
                 <div class="social-icons">
                     <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -368,19 +368,5 @@
     <script src="./main.js" defer></script>
     <!-- Defer loading of Bootstrap JS -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        fetch('content.json')
-          .then(response => response.json())
-          .then(data => {
-            document.querySelectorAll('[data-key]').forEach(el => {
-              const key = el.getAttribute('data-key');
-              if (data[key]) {
-                el.textContent = data[key];
-              }
-            });
-          });
-      });
-    </script>
   </body>
 </html>
