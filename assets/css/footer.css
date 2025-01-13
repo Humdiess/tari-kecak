@@ -123,7 +123,7 @@
 
 .last-section {
   height: 380px;
-  background-image: url('assets/img/image5.png');
+  background-image: url("../img/image5.png");
   background-size: cover;
   background-position: center;
   display: flex;
