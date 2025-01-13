@@ -11,7 +11,7 @@
     font-weight: var(--font-weight-bold);
     margin-bottom: 4rem;
     text-align: center;
-    font-family: var(--font-family-italiana);
+    font-family: "Italiana", serif;
     max-width: 36rem;
     color: var(--color-white);
 }
@@ -139,6 +139,7 @@
 .show-info h3 {
     font-size: 24px;
     margin-bottom: 0.3rem;
+    font-family: var(--font-family-italiana);
 }
 
 .show-price {
@@ -159,7 +160,7 @@
 }
 
 .book-btn a {
-  font-family: var(--font-family-merriweather);
+    font-family: var(--font-family-italiana);
   font-size: var(--font-size-small);
   color: var(--color-white);
 }
