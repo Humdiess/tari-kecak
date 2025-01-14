@@ -15,6 +15,8 @@
     --font-weight-black: 900;
 }
 
+@import url('/assets/css/components/acak.css');
+
 p {
   margin-bottom: 0 !important;
 }
