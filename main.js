@@ -86,3 +86,28 @@ document.addEventListener('DOMContentLoaded', () => {
           ? '<i class="fas fa-times"></i>' 
           : '<i class="fas fa-bars"></i>';
   });
+
+  // Get elements
+const popupModal = document.getElementById('popupModal');
+const closePopup = document.getElementById('closePopup');
+const readMoreButtons = document.querySelectorAll('a[href="#"], .readmore a, .book-btn');
+
+// Show modal when any button is clicked
+readMoreButtons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    popupModal.style.display = 'flex'; // Show modal
+  });
+});
+
+// Close modal when 'x' is clicked
+closePopup.addEventListener('click', () => {
+  popupModal.style.display = 'none';
+});
+
+// Close modal when clicking outside the modal content
+popupModal.addEventListener('click', (e) => {
+  if (e.target === popupModal) {
+    popupModal.style.display = 'none';
+  }
+});
